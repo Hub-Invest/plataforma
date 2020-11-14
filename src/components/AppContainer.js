@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 		marginTop: 20
 	},
 	drawer: {
-		paddingLeft: 50,
+		paddingLeft: 30,
 		alignItems: 'center',
 		justifyContent: 'center',
 		display: 'flex',
@@ -51,21 +51,23 @@ const useStyles = makeStyles({
 		width: '100%'
 	},
 	logoContainer: {
-		height: '15%',
+		width: '90%',
+		paddingRight: 10,
+		paddingBottom: 50,
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
 	contentPaper: {
 		backgroundColor: 'white',
 		height: '95%',
-		width: '95%',
-		alignSelf: 'left',
+		width: '97%',
 		borderRadius: 40
 	},
 	content: {
+		// alignSelf: 'left',
 		display: 'flex',
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'left'
 	},
 	listItem: {
 		borderRadius: 20
