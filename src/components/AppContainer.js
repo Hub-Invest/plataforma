@@ -95,37 +95,37 @@ const AppContainer = ({ children }) => {
 
 									<ListItemText primary="Home" />
 								</ListItem>
-								<ListItem button component={Link} to="/emalta">
+								<ListItem button component={Link} to="/emalta" className={classes.listItem}>
 									<ListItemIcon>
 										<FavoriteBorderOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
 									<ListItemText primary="Em alta" />
 								</ListItem>
-								<ListItem button component={Link} to="/minicursos">
+								<ListItem button component={Link} to="/minicursos" className={classes.listItem}>
 									<ListItemIcon>
 										<MenuBookOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
 									<ListItemText primary="Mini cursos" />
 								</ListItem>
-								<ListItem button component={Link} to="/graficos">
+								<ListItem button component={Link} to="/graficos" className={classes.listItem}>
 									<ListItemIcon>
 										<InsertChartOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
 									<ListItemText primary="Gráficos" />
 								</ListItem>
-								<ListItem button component={Link} to="/simulador">
+								<ListItem button component={Link} to="/simulador" className={classes.listItem}>
 									<ListItemIcon>
 										<EditOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
 									<ListItemText primary="Simulador de Investimentos" />
 								</ListItem>
-								<ListItem button component={Link} to="/chat">
+								<ListItem button component={Link} to="/chat" className={classes.listItem}>
 									<ListItemIcon>
 										<ForumOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
 									<ListItemText primary="InvestorChat" />
 								</ListItem>
-								<ListItem button component={Link} to="/configuracoes">
+								<ListItem button component={Link} to="/configuracoes" className={classes.listItem}>
 									<ListItemIcon>
 										<SettingsOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
@@ -136,7 +136,7 @@ const AppContainer = ({ children }) => {
 									color="inherit"
 									onClick={(e) => e.preventDefault}
 								>
-									<ListItem button>
+									<ListItem button className={classes.listItem}>
 										<ListItemIcon>
 											<AccountBalanceOutlinedIcon className={classes.icon} />
 										</ListItemIcon>

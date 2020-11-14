@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
+import chatImage from '../assets/chatImage.png';
 
 const useStyles = makeStyles({
 	container: {
@@ -59,7 +60,8 @@ const useStyles = makeStyles({
 		height: 400,
 		width: 350,
 		backgroundColor: 'lightgrey',
-		borderRadius: 20
+		borderRadius: 20,
+		backgroundImage: chatImage
 	},
 	avatar: {
 		marginRight: 10
@@ -132,9 +134,27 @@ const Chat = () => {
 									Michelangelo
 								</Typography>
 							</div>
+							<div className={classes.aulas}>
+								<Avatar className={classes.avatar}>D</Avatar>
+								<Typography className={classes.text} variant="body2">
+									Donatello
+								</Typography>
+							</div>
+							<div className={classes.aulas}>
+								<Avatar className={classes.avatar}>B</Avatar>
+								<Typography className={classes.text} variant="body2">
+									Botticelli
+								</Typography>
+							</div>
+							<div className={classes.aulas}>
+								<Avatar className={classes.avatar}>R</Avatar>
+								<Typography className={classes.text} variant="body2">
+									Rembrandt
+								</Typography>
+							</div>
 						</Grid>
 						<Grid item xs={7}>
-							<div className={classes.chat} />
+							<img className={classes.chat} src={chatImage} />
 						</Grid>
 					</Grid>
 				</Container>

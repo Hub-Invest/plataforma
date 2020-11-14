@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 	}
 });
 
-const MediaCard = ({ image }) => {
+const MediaCard = ({ image, text }) => {
 	const classes = useStyles();
 
 	return (
@@ -27,7 +27,7 @@ const MediaCard = ({ image }) => {
 				<CardMedia className={classes.media} image={image} title="Contemplative Reptile" />
 				<CardContent>
 					<Typography variant="body2" color="textSecondary" component="p">
-						Investir
+						{text}
 					</Typography>
 				</CardContent>
 			</CardActionArea>
