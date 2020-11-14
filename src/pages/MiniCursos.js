@@ -66,6 +66,7 @@ const useStyles = makeStyles({
 		alignItems: 'center'
 	},
 	aulas: {
+		marginBottom: 10,
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center'
