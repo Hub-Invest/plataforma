@@ -12,7 +12,7 @@ import Poppins from 'typeface-poppins';
 
 const THEME = createMuiTheme({
 	typography: {
-		fontFamily: 'Poppins'
+		fontFamily: Poppins
 	}
 });
 
