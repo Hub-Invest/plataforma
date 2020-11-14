@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import AppContainer from '../components/AppContainer';
@@ -6,7 +6,7 @@ import AppContainer from '../components/AppContainer';
 const useStyles = makeStyles({});
 
 const EmAlta = () => {
-	const classes = useStyles();
+	// const classes = useStyles();
 
 	return (
 		<div className="classes.root">

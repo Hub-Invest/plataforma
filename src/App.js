@@ -15,7 +15,7 @@ const THEME = createMuiTheme({
 	}
 });
 
-function App() {
+const App = () => {
 	return (
 		<Router>
 			<Switch>
@@ -29,7 +29,7 @@ function App() {
 			</Switch>
 		</Router>
 	);
-}
+};
 
 export default () => {
 	return (
