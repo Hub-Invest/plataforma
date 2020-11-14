@@ -154,7 +154,7 @@ const Chat = () => {
 							</div>
 						</Grid>
 						<Grid item xs={7}>
-							<img className={classes.chat} src={chatImage} />
+							<img alt="chat" className={classes.chat} src={chatImage} />
 						</Grid>
 					</Grid>
 				</Container>
