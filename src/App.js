@@ -17,24 +17,20 @@ const THEME = createMuiTheme({
 
 const App = () => {
 	return (
-		<Router>
-			<Switch>
-				<Route path="/" exact component={Home} />
-				<Route path="/emalta" exact component={EmAlta} />
-				<Route path="/minicursos" exact component={MiniCursos} />
-				<Route path="/graficos" exact component={Graficos} />
-				<Route path="/simulador" exact component={Simulador} />
-				<Route path="/chat" exact component={Chat} />
-				<Route path="/configuracoes" exact component={Configuracoes} />
-			</Switch>
-		</Router>
-	);
-};
-
-export default () => {
-	return (
 		<ThemeProvider theme={THEME}>
-			<App />
+			<Router>
+				<Switch>
+					<Route path="/" exact component={Home} />
+					<Route path="/emalta" exact component={EmAlta} />
+					<Route path="/minicursos" exact component={MiniCursos} />
+					<Route path="/graficos" exact component={Graficos} />
+					<Route path="/simulador" exact component={Simulador} />
+					<Route path="/chat" exact component={Chat} />
+					<Route path="/configuracoes" exact component={Configuracoes} />
+				</Switch>
+			</Router>
 		</ThemeProvider>
 	);
 };
+
+export default App;
