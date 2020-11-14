@@ -32,21 +32,6 @@ const useStyles = makeStyles({
 	title: {
 		paddingTop: 20,
 		paddingBottom: 20
-	},
-	video: {
-		marginRight: 30,
-		backgroundColor: 'grey',
-		height: '100%'
-	},
-	cards: {
-		marginTop: 30,
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'space-between'
-	},
-	main: {
-		justifyContent: 'space-between',
-		alignItems: 'center'
 	}
 });
 

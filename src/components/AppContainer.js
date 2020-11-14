@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import { Link as MaterialLink } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
@@ -59,7 +59,7 @@ const useStyles = makeStyles({
 	},
 	contentPaper: {
 		backgroundColor: 'white',
-		height: '90%',
+		height: '95%',
 		width: '97%',
 		borderRadius: 40
 	},
@@ -131,17 +131,24 @@ const AppContainer = ({ children }) => {
 									</ListItemIcon>
 									<ListItemText primary="Configurações" />
 								</ListItem>
-
-								<ListItem button component={Link} to="https://www.orama.com.br/">
-									<ListItemIcon>
-										<AccountBalanceOutlinedIcon className={classes.icon} />
-									</ListItemIcon>
-									<ListItemText primary="Quero investir!" />
-								</ListItem>
+								<MaterialLink
+									href="https://www.orama.com.br/"
+									color="inherit"
+									onClick={(e) => e.preventDefault}
+								>
+									<ListItem button>
+										<ListItemIcon>
+											<AccountBalanceOutlinedIcon className={classes.icon} />
+										</ListItemIcon>
+										<ListItemText primary="Quero investir!" />
+									</ListItem>
+								</MaterialLink>
 							</List>
 						</Grid>
 						<Grid item className={classes.content} xs={1} sm={9} lg={10}>
-							<Paper className={classes.contentPaper}>{children}</Paper>
+							<Paper elevation={0} className={classes.contentPaper}>
+								{children}
+							</Paper>
 						</Grid>
 					</Grid>
 					{/* ) : (
