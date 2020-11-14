@@ -5,16 +5,16 @@ import AppContainer from '../components/Container';
 
 const useStyles = makeStyles({});
 
-const Home = () => {
+const MiniCursos = () => {
 	const classes = useStyles();
 
 	return (
 		<div className="classes.root">
 			<AppContainer>
-				<div>Home</div>
+				<div>Mini Cursos</div>
 			</AppContainer>
 		</div>
 	);
 };
 
-export default Home;
+export default MiniCursos;
