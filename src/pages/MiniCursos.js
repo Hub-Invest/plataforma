@@ -7,11 +7,12 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
-// import MoneyOffIcon from '@material-ui/icons/MoneyOff';
-// import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
-// import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-// import EuroIcon from '@material-ui/icons/Euro';
+import MoneyOffIcon from '@material-ui/icons/MoneyOff';
+import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import EuroIcon from '@material-ui/icons/Euro';
 import MediaCard from '../components/Card';
+import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 
 import financas3 from '../assets/financas3.jpg';
 
@@ -118,7 +119,7 @@ const MiniCursos = () => {
 							</Typography>
 							<div className={classes.aulas}>
 								<Button type="submit" variant="contained" color="primary" className={classes.aula}>
-									<SearchIcon />
+									<MonetizationOnIcon />
 								</Button>
 								<Typography className={classes.text} variant="body2">
 									O que é o Tesouro Direto?
@@ -126,7 +127,7 @@ const MiniCursos = () => {
 							</div>
 							<div className={classes.aulas}>
 								<Button type="submit" variant="contained" color="primary" className={classes.aula}>
-									<SearchIcon />
+									<AccountBalanceWalletIcon />
 								</Button>
 								<Typography className={classes.text} variant="body2">
 									Como usar a plataforma
@@ -134,7 +135,7 @@ const MiniCursos = () => {
 							</div>
 							<div className={classes.aulas}>
 								<Button type="submit" variant="contained" color="primary" className={classes.aula}>
-									<SearchIcon />
+									<MoneyOffIcon />
 								</Button>
 								<Typography className={classes.text} variant="body2">
 									Quanto devo investir
@@ -142,7 +143,7 @@ const MiniCursos = () => {
 							</div>
 							<div className={classes.aulas}>
 								<Button type="submit" variant="contained" color="primary" className={classes.aula}>
-									<SearchIcon />
+									<EuroIcon />
 								</Button>
 								<Typography className={classes.text} variant="body2">
 									Quais as minhas opções
@@ -150,7 +151,7 @@ const MiniCursos = () => {
 							</div>
 							<div className={classes.aulas}>
 								<Button type="submit" variant="contained" color="primary" className={classes.aula}>
-									<SearchIcon />
+									<LocalAtmIcon />
 								</Button>
 								<Typography className={classes.text} variant="body2">
 									Entendendo o meu perfil
