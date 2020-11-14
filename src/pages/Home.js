@@ -8,18 +8,22 @@ import Button from '@material-ui/core/Button';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 
+import MediaCard from '../components/Card';
+import financas1 from '../assets/financas1.jpg';
+import financas2 from '../assets/financas2.jpg';
+import financas3 from '../assets/financas3.jpg';
+
 const useStyles = makeStyles({
 	container: {
-		alignItems: 'center',
+		padding: 40,
 		display: 'flex',
 		flexDirection: 'column'
 	},
 
 	item: {
-		paddingTop: 30,
 		flexDirection: 'row',
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'space-between'
 	},
 	submit: {
 		marginLeft: 20,
@@ -27,6 +31,25 @@ const useStyles = makeStyles({
 		borderRadius: 15,
 		height: 50,
 		width: 50
+	},
+	title: {
+		paddingTop: 20,
+		paddingBottom: 20
+	},
+	video: {
+		marginRight: 30,
+		backgroundColor: 'grey',
+		height: '100%'
+	},
+	cards: {
+		marginTop: 30,
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'space-between'
+	},
+	main: {
+		justifyContent: 'space-between',
+		alignItems: 'center'
 	}
 });
 
@@ -37,7 +60,7 @@ const Home = () => {
 	return (
 		<div className="classes.root">
 			<AppContainer>
-				<Container>
+				<Container className={classes.container}>
 					<form onSubmit={() => {}} className={classes.form}>
 						<Grid container className={classes.item}>
 							<Grid item xs={8}>
@@ -58,8 +81,36 @@ const Home = () => {
 							</Grid>
 						</Grid>
 					</form>
-					<Typography variant="h4">Dica do Dia</Typography>
-					<div>Home</div>
+					<Typography className={classes.title} variant="h5">
+						Dica do Dia
+					</Typography>
+					<Grid container className={classes.main}>
+						<Grid item xs={5}>
+							<MediaCard image={financas3} />
+						</Grid>
+						<Grid item xs={6}>
+							<Typography className={classes.title} variant="h5">
+								A importância de investir
+							</Typography>
+							<Typography className={classes.title} variant="body2">
+								Dow Jones market index strategy risk. Shares stocks bills corporation finance bonds
+								consulting NASDAQ bear growth notes index funds comodity. Standard & Poor's passively
+								lucrative consulting public Fitch default interest rate investment credit quality notes
+								fiat. Default rise lucrative rates substantially index comodity (...)
+							</Typography>
+						</Grid>
+					</Grid>
+					<Grid className={classes.cards}>
+						<Grid item xs={3}>
+							<MediaCard image={financas1} />
+						</Grid>
+						<Grid item xs={3}>
+							<MediaCard image={financas2} />
+						</Grid>
+						<Grid item xs={3}>
+							<MediaCard image={financas3} />
+						</Grid>
+					</Grid>
 				</Container>
 			</AppContainer>
 		</div>

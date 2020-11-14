@@ -59,7 +59,7 @@ const useStyles = makeStyles({
 	},
 	contentPaper: {
 		backgroundColor: 'white',
-		height: '95%',
+		height: '90%',
 		width: '97%',
 		borderRadius: 40
 	},
