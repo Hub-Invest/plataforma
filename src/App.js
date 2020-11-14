@@ -8,6 +8,7 @@ import Simulador from './pages/Simulador';
 import Chat from './pages/Chat';
 import Configuracoes from './pages/Configuracoes';
 import './App.css';
+import Poppins from 'typeface-poppins';
 
 const THEME = createMuiTheme({
 	typography: {
