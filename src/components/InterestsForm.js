@@ -50,10 +50,10 @@ const InterestsForm = () => {
 				Interesses
 			</Typography>
 			<Typography variant="body2" style={{ marginTop: 10 }}>
-				Esse paço vai nos ajudar a entender quais investimentos serão mais interessantes para você
+				Esse passo vai nos ajudar a entender quais investimentos serão mais interessantes para você
 			</Typography>
 			<Typography variant="h6" style={{ marginTop: 10 }}>
-				Tem interesse em investir em investimentos relacionados a ações sociais?{' '}
+				Tem interesse em investimentos relacionados a ações sociais?{' '}
 			</Typography>
 			<RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleRadioChange}>
 				<FormControlLabel value="female" control={<Radio />} label="Sim" />

@@ -5,6 +5,8 @@ import InvestProfilePage from './pages/InvestProfilePage';
 import InterestsPage from './pages/InterestsPage';
 import SignupFormPage from './pages/SignupFormPage';
 import EmAlta from './pages/EmAlta';
+import Orama from './pages/Orama';
+import OramaEmail from './pages/OramaEmail';
 import MiniCursos from './pages/MiniCursos';
 import Graficos from './pages/Graficos';
 import Simulador from './pages/Simulador';
@@ -26,6 +28,8 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route path="/" exact component={Welcome} />
+					<Route path="/orama" exact component={Orama} />
+					<Route path="/oramaemail" exact component={OramaEmail} />
 					<Route path="/signup" exact component={SignupFormPage} />
 					<Route path="/investorprofile" exact component={InvestProfilePage} />
 					<Route path="/interests" exact component={InterestsPage} />
