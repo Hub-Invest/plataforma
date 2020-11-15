@@ -66,7 +66,7 @@ const Welcome = () => {
 					<img src={logo} className={classes.logo} alt="logo" />
 				</div>
 				<Typography className={classes.title} variant="h4">
-					Bom vindo ao HUB+Invest
+					Bem vindo ao HUB+Invest
 				</Typography>
 				<Typography className={classes.subtitle} variant="h5">
 					Antes de mais nada, precisamos te conhecer melhor!!
