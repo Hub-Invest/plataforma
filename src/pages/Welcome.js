@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'column',
 		backgroundColor: '#8900D6',
-		minHeight: '85vh',
+		// minHeight: '85vh',
 		borderRadius: 10,
 		// alignItems: 'center',
 		justifyContent: 'start',
@@ -87,7 +87,7 @@ const Welcome = () => {
 						</NavLink>
 					</Grid>
 					<Grid item xm={3}>
-						<NavLink to="/home" style={{ textDecoration: 'none' }}>
+						<NavLink to="/signup" style={{ textDecoration: 'none' }}>
 							<Button variant="contained" className={classes.submit}>
 								<Typography style={{ color: '#8900D6' }}>Estou Pronto</Typography>
 							</Button>

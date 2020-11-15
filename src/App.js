@@ -1,6 +1,8 @@
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Home from './pages/Home';
+import InvestProfilePage from './pages/InvestProfilePage';
+import SignupFormPage from './pages/SignupFormPage';
 import EmAlta from './pages/EmAlta';
 import MiniCursos from './pages/MiniCursos';
 import Graficos from './pages/Graficos';
@@ -23,6 +25,8 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route path="/" exact component={Welcome} />
+					<Route path="/signup" exact component={SignupFormPage} />
+					<Route path="/investorprofile" exact component={InvestProfilePage} />
 					<Route path="/home" exact component={Home} />
 					<Route path="/emalta" exact component={EmAlta} />
 					<Route path="/minicursos" exact component={MiniCursos} />
