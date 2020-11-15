@@ -121,7 +121,7 @@ const InvestForm = () => {
 						/>
 						<FormControlLabel
 							control={<Checkbox checked={state.checkedK} name="checkedK" onChange={handleChange} />}
-							label="No risc, no reward"
+							label="No risk, no reward"
 						/>
 					</FormGroup>
 				</div>
