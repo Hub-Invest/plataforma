@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
@@ -59,10 +59,7 @@ const useStyles = makeStyles({
 
 const SignupFormPage = () => {
 	const classes = useStyles();
-	const [ name, setName ] = useState('');
-	const [ email, setEmail ] = useState('');
-	const [ telefone, setTelefone ] = useState('');
-	const [ state, setState ] = useState('');
+
 	return (
 		<Container className={classes.container}>
 			<Paper elevation={3} className={classes.paper}>

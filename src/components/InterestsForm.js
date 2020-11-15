@@ -25,7 +25,7 @@ function valuetext(value) {
 
 const InterestsForm = () => {
 	const classes = useStyles();
-	const [ state, setState ] = React.useState({
+	const [ state, setState ] = useState({
 		checkedA: true,
 		checkedB: false,
 		checkedC: true,
@@ -38,7 +38,7 @@ const InterestsForm = () => {
 		checkedJ: false,
 		checkedK: true
 	});
-	const [ value, setValue ] = React.useState('sim');
+	const [ value, setValue ] = useState('sim');
 
 	const handleRadioChange = (event) => {
 		setValue(event.target.value);

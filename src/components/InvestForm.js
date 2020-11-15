@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+
 import Container from '@material-ui/core/Container';
 import Slider from '@material-ui/core/Slider';
 import Grid from '@material-ui/core/Grid';
@@ -9,36 +9,12 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
-const useStyles = makeStyles({
-	aulas: {
-		marginBottom: 10,
-		display: 'flex',
-		flexDirection: 'row',
-		alignItems: 'center'
-	},
-	aula: {
-		marginLeft: 20,
-		backgroundColor: '#E613D5',
-		borderRadius: 15,
-		height: 30,
-		width: 30,
-		padding: 20,
-		minHeight: 0,
-		minWidth: 0,
-		marginRight: 10
-	},
-	redes: {
-		display: 'flex',
-		flexDirection: 'row'
-	}
-});
 function valuetext(value) {
 	return `R$${value}00`;
 }
 
 const InvestForm = () => {
-	const classes = useStyles();
-	const [ state, setState ] = React.useState({
+	const [ state, setState ] = useState({
 		checkedA: true,
 		checkedB: false,
 		checkedC: true,
@@ -51,7 +27,7 @@ const InvestForm = () => {
 		checkedJ: false,
 		checkedK: true
 	});
-	const [ value, setValue ] = React.useState([ 25, 87 ]);
+	const [ value, setValue ] = useState([ 25, 87 ]);
 
 	const handleSliderChange = (event, newValue) => {
 		setValue(newValue);
