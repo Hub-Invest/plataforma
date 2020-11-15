@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
-import InvestForm from '../components/InvestForm';
+import InterestsForm from '../components/InterestsForm';
 
 const useStyles = makeStyles({
 	paper: {
@@ -21,7 +21,8 @@ const useStyles = makeStyles({
 		color: 'black'
 	},
 	container: {
-		marginTop: '7vh'
+		marginTop: '7vh',
+		marginBottom: '7vh'
 	},
 	logo: {
 		width: '80%'
@@ -56,7 +57,7 @@ const useStyles = makeStyles({
 	}
 });
 
-const InvestProfilePage = () => {
+const InterestsPage = () => {
 	const classes = useStyles();
 	return (
 		<Container className={classes.container}>
@@ -84,7 +85,7 @@ const InvestProfilePage = () => {
 								<ArrowRightAltIcon />
 							</Typography>
 						</div>
-						<InvestForm />
+						<InterestsForm />
 						<Grid container className={classes.buttons}>
 							<Grid item xs={3}>
 								<NavLink to="/home" style={{ textDecoration: 'none' }}>
@@ -94,7 +95,7 @@ const InvestProfilePage = () => {
 								</NavLink>
 							</Grid>
 							<Grid item xs={3}>
-								<NavLink to="/interests" style={{ textDecoration: 'none' }}>
+								<NavLink to="/home" style={{ textDecoration: 'none' }}>
 									<Button variant="contained" className={classes.submit}>
 										<Typography style={{ color: 'white' }}>Próximo</Typography>
 									</Button>
@@ -108,4 +109,4 @@ const InvestProfilePage = () => {
 	);
 };
 
-export default InvestProfilePage;
+export default InterestsPage;

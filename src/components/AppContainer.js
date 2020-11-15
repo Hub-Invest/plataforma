@@ -30,7 +30,8 @@ const useStyles = makeStyles({
 		borderRadius: 10
 	},
 	container: {
-		marginTop: 20
+		marginTop: 20,
+		marginBottom: 20
 	},
 	drawer: {
 		paddingLeft: 30,
