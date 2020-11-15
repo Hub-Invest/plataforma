@@ -72,7 +72,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedA} name="checkedA" onChange={handleChange} />
 									}
-									label="Aposentadoria"
+									label="Sustentabilidade"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -82,7 +82,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedB} name="checkedB" onChange={handleChange} />
 									}
-									label="Uma viagem"
+									label="Feminismo"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -92,7 +92,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedC} name="checkedC" onChange={handleChange} />
 									}
-									label="Comprar um carro"
+									label="LGBT+"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -102,7 +102,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedD} name="checkedD" onChange={handleChange} />
 									}
-									label="Comprar uma casa"
+									label="Imóveis"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -114,7 +114,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedE} name="checkedE" onChange={handleChange} />
 									}
-									label="Aposentadoria"
+									label="Fortune500"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -124,7 +124,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedF} name="checkedF" onChange={handleChange} />
 									}
-									label="Uma viagem"
+									label="Pequenos Negócios"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -134,7 +134,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedG} name="checkedG" onChange={handleChange} />
 									}
-									label="Comprar um carro"
+									label="Serviços Essenciais"
 									labelPlacement="bottom"
 								/>
 							</Grid>
@@ -144,7 +144,7 @@ const InterestsForm = () => {
 									control={
 										<Checkbox checked={state.checkedH} name="checkedH" onChange={handleChange} />
 									}
-									label="Comprar uma casa"
+									label="Outros"
 									labelPlacement="bottom"
 								/>
 							</Grid>
