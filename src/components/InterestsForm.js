@@ -19,9 +19,6 @@ const useStyles = makeStyles({
 		width: '70%'
 	}
 });
-function valuetext(value) {
-	return `R$${value}00`;
-}
 
 const InterestsForm = () => {
 	const classes = useStyles();
