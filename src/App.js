@@ -6,6 +6,7 @@ import MiniCursos from './pages/MiniCursos';
 import Graficos from './pages/Graficos';
 import Simulador from './pages/Simulador';
 import Chat from './pages/Chat';
+import Welcome from './pages/Welcome';
 import Configuracoes from './pages/Configuracoes';
 import './App.css';
 import Poppins from 'typeface-poppins';
@@ -21,7 +22,8 @@ const App = () => {
 		<ThemeProvider theme={THEME}>
 			<Router>
 				<Switch>
-					<Route path="/" exact component={Home} />
+					<Route path="/" exact component={Welcome} />
+					<Route path="/home" exact component={Home} />
 					<Route path="/emalta" exact component={EmAlta} />
 					<Route path="/minicursos" exact component={MiniCursos} />
 					<Route path="/graficos" exact component={Graficos} />

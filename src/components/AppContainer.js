@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexWrap: 'wrap',
 		backgroundColor: '#8900D6',
-		height: '100vh',
+		minHeight: '95vh',
 		borderRadius: 10
 	},
 	container: {
@@ -83,12 +83,12 @@ const AppContainer = ({ children }) => {
 				<Paper className={classes.paper}>
 					{/* {isDrawerOpen ? ( */}
 					<Grid container>
-						<Grid className={classes.drawer} item xs={12} sm={3} lg={2}>
+						<Grid className={classes.drawer} item xs={9} sm={3} lg={2}>
 							<div className={classes.logoContainer}>
 								<img src={logo} className={classes.logo} alt="logo" />
 							</div>
 							<List component="nav">
-								<ListItem component={Link} to="/" button className={classes.listItem}>
+								<ListItem component={Link} to="/home" button className={classes.listItem}>
 									<ListItemIcon>
 										<HomeOutlinedIcon className={classes.icon} />
 									</ListItemIcon>
