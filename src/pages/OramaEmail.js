@@ -92,7 +92,7 @@ const OramaEmail = () => {
 						/>
 					</Grid>
 					<Grid item xs={2}>
-						<NavLink to="/" style={{ textDecoration: 'none' }}>
+						<NavLink to="/welcome" style={{ textDecoration: 'none' }}>
 							<Button type="submit" className={classes.send}>
 								<SendIcon style={{ color: '#3F942B' }} />
 							</Button>

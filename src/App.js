@@ -27,8 +27,8 @@ const App = () => {
 		<ThemeProvider theme={THEME}>
 			<Router>
 				<Switch>
-					<Route path="/" exact component={Welcome} />
-					<Route path="/orama" exact component={Orama} />
+					<Route path="/welcome" exact component={Welcome} />
+					<Route path="/" exact component={Orama} />
 					<Route path="/oramaemail" exact component={OramaEmail} />
 					<Route path="/signup" exact component={SignupFormPage} />
 					<Route path="/investorprofile" exact component={InvestProfilePage} />
